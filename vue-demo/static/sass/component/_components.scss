@@ -1,0 +1,187 @@
+.button {
+    padding: 19px 34px;
+    background: #57C4C9;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    display: inline-block;
+    font-weight: 700;
+    @include transition(all 0.3s ease-in-out);
+    @include border-radius(4px);
+    &:hover {
+        background: #28969B;
+    }
+}
+.c-progressbar {
+    display: block;
+    ul {
+        width: 100%;
+        height: 4px;
+        background: #EDEDED;
+        font-size: 0;
+        overflow: hidden;
+        @include border-radius(5px);
+        li {
+            display: inline-block;
+            background: #A5D027;
+            width: 33.33%;
+            height: 4px;
+        }
+    }
+}
+.c-signup-btn {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: $white;
+    font-family: $main-font;
+    height: 54px;
+    line-height: 54px;
+    background: #004D95;
+    @include border-radius(5px);
+    text-align: center;
+    display: block;
+    width: 100%;
+    @include transition(all 0.3s ease-in-out);
+    &:hover {
+        background: #043E74;
+    }
+    span {
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            background: url('../images/button-arrow.png') no-repeat 0 0 transparent;
+            width: 7px;
+            height: 13px;
+            right: -12px;
+            top: 5px;
+        }
+    }
+    &.c-signup-btn--noarrow {
+        span {
+            &:after {
+                background: none;
+            }
+        }
+    }
+    &.c-signup-btn--block {
+        display: inline-block;
+        width: auto;
+        padding: 0 75px;
+    }
+}
+.c-facebook {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid #335E9B;
+    display: block;
+    font-family: $main-font;
+    @include border-radius(5px);
+    @include transition(all 0.3s ease-in-out);
+    @include responsive(tab) {
+        height: 53px;
+        line-height: 53px;
+    }
+    &:hover {
+        background: #043E74;
+        color: $white;
+        cursor: pointer;
+    }
+}
+.c-twitter {
+    @extend .c-facebook;
+    color: #00ACE2;
+    border: 1px solid #00ACE2;
+    &:hover {
+        background: #00ACE2;
+        color: $white;
+    }
+}
+.c-datepicker {
+    background: url('../images/small-calendar.png') no-repeat right 0 transparent;
+}
+.slimScrollBar {
+    opacity: 1 !important;
+    background: #AFAFAF !important;
+}
+// checkbox
+.c-customcheckbox {
+    position: absolute; // take it out of document flow
+    opacity: 0; // hide it
+    &+label {
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        font-size: 12px;
+        width: 100%;
+    }
+    // Box.
+    &+label:before {
+        content: '';
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 20px;
+        float: left;
+        height: 20px;
+        background: #fff;
+        border: 1px solid #9D9D9D;
+        @include border-radius (5px);
+    }
+    // Box hover
+    &:hover+label:before {
+        background: #fff;
+    }
+    // Box focus
+    &:focus+label:before {}
+    // Box checked
+    &:checked+label:before {
+        background: #fff;
+    }
+    // Disabled state label.
+    &:disabled+label {
+        color: #b8b8b8;
+        cursor: auto;
+    }
+    // Disabled box.
+    &:disabled+label:before {
+        box-shadow: none;
+        background: #ddd;
+    }
+    // Checkmark. Could be replaced with an image
+    &:checked+label:after {
+        content: '';
+        position: absolute;
+        left: 5px;
+        top: 9px;
+        background: #5E5D5D;
+        width: 2px;
+        height: 2px;
+        box-shadow: 2px 0 0 #5E5D5D, 4px 0 0 #5E5D5D, 4px -2px 0 #5E5D5D, 4px -4px 0 #5E5D5D, 4px -6px 0 #5E5D5D, 4px -8px 0 #5E5D5D;
+        transform: rotate(45deg);
+    }
+}
+// icon box
+.c-iconbox {
+    width: 84px;
+    height: 84px;
+    position: relative;
+    background: #00ADF2;
+    @include border-radius (5px);
+    i {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        @include transform (translate(-50%,
+        -50%));
+    }
+}

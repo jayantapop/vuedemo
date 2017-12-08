@@ -3,13 +3,21 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VeeValidate from 'vee-validate'
+import VuePaginate from 'vue-paginate'
 
 Vue.config.productionTip = false
 
+Vue.use(VeeValidate);
+Vue.use(VuePaginate);
+
+
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  template: '<App/>',
-  components: { App }
+    el: '#app',
+    router,
+    template: '<App/>',
+    components: {
+        App
+    }
 })

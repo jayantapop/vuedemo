@@ -1,0 +1,67 @@
+// FONTS
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900";
+$main-font: 'Roboto',
+sans-serif;
+
+/*======Variable color start=======*/
+
+$black:#000000;
+$white:#ffffff;
+$primary-color:#f05f40;
+$heading-color:#646464;
+$gray-color:#d3d3d3;
+$hover-color: #d7df21;
+$active-color: #0A72AB;
+// $alert-color: #f04124;
+// $success-color:#43AC6A;
+// $warning-color: #f08a24;
+// $info-color: #a0d3e8;
+// $light-text:#858585;
+// $light-grey: #717171;
+$dark-grey: #515151;
+$facebook-color: #3b5998;
+$twitter-color: #00aced;
+$linkedin-color: #007bb5;
+$email-color: #dd4b39;
+
+/*======Variable color end=======*/
+
+// responisve
+// responisve
+@mixin responsive($breakpoint) {
+    @if $breakpoint==iphone6 {
+        @media (min-width: 375px) {
+            @content;
+        }
+    }
+    @else if $breakpoint==phone6plus {
+        @media (min-width: 414px) {
+            @content;
+        }
+    }
+    @else if $breakpoint==phone {
+        @media (min-width: 480px) {
+            @content;
+        }
+    }
+    @else if $breakpoint==iphone {
+        @media (min-width: 640px) {
+            @content;
+        }
+    }
+    @else if $breakpoint==tab {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    @else if $breakpoint==desktop {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+    @else if $breakpoint==xbig {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+}
