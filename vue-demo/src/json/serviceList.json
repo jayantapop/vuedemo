@@ -1,0 +1,22 @@
+[
+    {
+        serviceIcon: 'fa fa-handshake-o',
+        serviceTitle: 'Sturdy Templates',
+        serviceDetails: 'Our templates are updated regularly so they dont break.'
+            },
+    {
+        serviceIcon: 'fa fa-balance-scale',
+        serviceTitle: 'Ready to Ship',
+        serviceDetails: 'You can use this theme as is, or you can make changes!'
+            },
+    {
+        serviceIcon: 'fa fa-thumbs-up',
+        serviceTitle: 'Up to Date',
+        serviceDetails: 'We update dependencies to keep things fresh.'
+            },
+    {
+        serviceIcon: 'fa fa-bicycle',
+        serviceTitle: 'Made with Love',
+        serviceDetails: 'You have to make your websites with love these days!'
+            }
+        ]

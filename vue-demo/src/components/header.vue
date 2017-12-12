@@ -7,7 +7,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active" v-for="item in menu">
+            <li v-for="item in menu" v-bind:class="{ active: isActive, 'nav-item': true }">
               <a class="nav-link" :href="item.navURL">{{ item.navName }}
 <!--                <span class="sr-only">(current)</span>-->
               </a>
@@ -29,6 +29,7 @@ export default {
   name: 'header',
   data () {
     return {
+        isActive:true,
         //menu: ['Home','About','Services','Contact']
         menu:[
             {

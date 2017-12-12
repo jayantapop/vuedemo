@@ -9,15 +9,16 @@
               <paginate
                   name="languages"
                   :list="projectDetails"
-                  :per="3"
+                  :per="4"
                 >
-                <div class="col-lg-4 col-sm-6 portfolio-item" v-for="item in paginated('languages')">
+                <div class="col-lg-3 col-sm-6 portfolio-item" v-for="item in paginated('languages')">
                   <div class="card h-100">
-                    <router-link :to="'images/' + item.id"><img class="card-img-top" :src="item.projectimage" alt=""></router-link>
-                    <div class="card-body">
+                   <div class="product-img-area">
+                       <router-link :to="'images/' + item.id"><img class="card-img-top" :src="item.projectimage" alt=""></router-link>
+                   </div>
+                    <div class="card-body project-title">
                       <h4 class="card-title">
                        <router-link :to="'images/' + item.id">{{ item.projectname }}</router-link>
-                      
                       </h4>
                       <p class="card-text">{{ item.projectdetail }}</p>
                     </div>
@@ -45,56 +46,56 @@ export default {
         projectDetails: [
             {
                 id: 1,
-                projectimage:'http://placehold.it/700x400',
-                projectname: 'Project One',
+                projectimage:'../../src/assets/portfolio1.jpg',
+                projectname: 'Lorem ipsum dolor',
                 projectdetail:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem'
             },
             {
                 id: 2,
                 projectimage:'http://placehold.it/700x400',
-                projectname: 'Project Two',
+                projectname: 'Sit amet, consectetur',
                 projectdetail:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem'
             },
             {
                 id: 3,
-                projectimage:'http://placehold.it/700x400',
-                projectname: 'Project Three',
+                projectimage:'../../src/assets/portfolio2.jpg',
+                projectname: 'Adipisicing elit',
                 projectdetail:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem'
             },
             {
                 id: 4,
                 projectimage:'http://placehold.it/700x400',
-                projectname: 'Project Four',
+                projectname: 'Amet numquam aspernatur',
                 projectdetail:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem'
             },
             {
                 id: 5,
-                projectimage:'http://placehold.it/700x400',
-                projectname: 'Project Five',
+                projectimage:'../../src/assets/portfolio1.jpg',
+                projectname: 'Eum quasi sapiente',
                 projectdetail:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem'
             },
             {
                 id: 6,
                 projectimage:'http://placehold.it/700x400',
-                projectname: 'Project Six',
+                projectname: 'Nesciunt? Voluptatibus sit',
                 projectdetail:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem'
             },
             {
                 id: 7,
-                projectimage:'http://placehold.it/700x400',
-                projectname: 'Project Seven',
+                projectimage:'../../src/assets/portfolio2.jpg',
+                projectname: 'Repellat sequi itaque deserunt',
                 projectdetail:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem'
             },
             {
                 id: 8,
                 projectimage:'http://placehold.it/700x400',
-                projectname: 'Project Eight',
+                projectname: 'Dolores in, nesciunt',
                 projectdetail:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem'
             },
             {
                 id: 9,
-                projectimage:'http://placehold.it/700x400',
-                projectname: 'Project Nine',
+                projectimage:'../../src/assets/portfolio1.jpg',
+                projectname: 'Illum tempora ex quae',
                 projectdetail:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem'
             }
             

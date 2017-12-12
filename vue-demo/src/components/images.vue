@@ -1,5 +1,5 @@
 <template>
- <div>
+ <div class="">
      <!-- Main Header start -->
    <mainheader></mainheader>
    <!-- Main Header end -->
@@ -12,16 +12,22 @@
       and verify the transfer of funds, operating independently of a central bank.
     </p>
   </div>
+  
+  <!-- Footer start -->
+   <mainfooter></mainfooter>
+   <!-- Footer end -->
  </div>
   
 </template>
 
 <script>
     import mainheader from './header.vue';
+    import mainfooter from './footer.vue';
 export default {
    name: 'Images',
    components: {
      mainheader,
+       mainfooter
    },
    data(){
     return{

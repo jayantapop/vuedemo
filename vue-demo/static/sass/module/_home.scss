@@ -287,3 +287,15 @@
 .project-pagination {
     text-align: right;
 }
+.product-img-area {
+    max-height: 145px;
+    overflow: hidden;
+    a {
+        display: block;
+    }
+}
+.project-title {
+    h4 {
+        height: 50px;
+    }
+}
