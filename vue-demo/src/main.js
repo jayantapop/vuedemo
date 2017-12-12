@@ -5,11 +5,17 @@ import App from './App'
 import router from './router'
 import VeeValidate from 'vee-validate'
 import VuePaginate from 'vue-paginate'
+import VueSession from 'vue-session'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
 
 Vue.config.productionTip = false
 
 Vue.use(VeeValidate);
 Vue.use(VuePaginate);
+Vue.use(VueSession);
+Vue.use(VueAxios, axios)
 
 
 /* eslint-disable no-new */

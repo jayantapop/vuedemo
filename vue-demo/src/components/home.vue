@@ -62,6 +62,12 @@ export default {
       //msg: 'Welcome to Your Vue.js App'
     }
   },
+    mounted() {
+        //console.log('from home vue',this.$session.has('user'));
+        if(!this.$session.has('user')){
+            this.$router.push('/login');
+        }
+    }
 }
 </script>
 

@@ -7,7 +7,8 @@
                 {{ bannerText.details }}
             </p>
             <div class="o-banner-button">
-                <a href="#">Find out more</a>
+<!--                <a href="#">Find out more</a>-->
+           <router-link to="about">Find out more</router-link>
             </div>
        </div>
     </section>

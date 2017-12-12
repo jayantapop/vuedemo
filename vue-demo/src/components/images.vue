@@ -24,12 +24,12 @@ export default {
      mainheader,
    },
    data(){
-            return{
-                id : parseInt(this.$route.params.id),
-                item : {},
-                quantity : "0"
-            }
-        },
+    return{
+        id : parseInt(this.$route.params.id),
+        item : {},
+        quantity : "0"
+        }
+    },
 }
 </script>
 

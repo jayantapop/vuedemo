@@ -16,7 +16,8 @@
                     <router-link :to="'images/' + item.id"><img class="card-img-top" :src="item.projectimage" alt=""></router-link>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="#">{{ item.projectname }}</a>
+                       <router-link :to="'images/' + item.id">{{ item.projectname }}</router-link>
+                      
                       </h4>
                       <p class="card-text">{{ item.projectdetail }}</p>
                     </div>

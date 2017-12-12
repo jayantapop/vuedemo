@@ -12,6 +12,11 @@
 <!--                <span class="sr-only">(current)</span>-->
               </a>
             </li>
+            <li>
+                <a href="javascript:void(0)" class="nav-link logout-link" v-on:click="logout">
+                    Logout
+                </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -42,9 +47,17 @@ export default {
                 navURL:'#/contact',
                 navName:'Contact',   
             },
+           
         ]
     }
-  }
+  },
+    methods:{
+        logout(){
+            //alert('logout')
+            this.$session.destroy();
+            this.$router.push('/login')
+        }
+    }
 }
 </script>
 
