@@ -11,7 +11,7 @@
                         {{ haveGot.details }}
                     </p>
                     <div class="o-banner-button-inverse">
-                        <a href="#">Get in touch</a>
+                        <router-link to="services">Get in touch</router-link>
                     </div>
                </div>
            </div>

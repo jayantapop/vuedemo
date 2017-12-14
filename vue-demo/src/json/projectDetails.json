@@ -9,5 +9,47 @@
         "projectimage": "'http://placehold.it/700x400'",
         "projectname": "Sit amet, consectetur",
         "projectdetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem"
+	},
+    {
+        "id": 3,
+        "projectimage": "'../../src/assets/portfolio2.jpg'",
+        "projectname": "Adipisicing elit",
+        "projectdetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem"
+	},
+    {
+        "id": 4,
+        "projectimage": "'http://placehold.it/700x400'",
+        "projectname": "Amet numquam aspernatur",
+        "projectdetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem"
+	},
+    {
+        "id": 5,
+        "projectimage": "'../../src/assets/portfolio1.jpg'",
+        "projectname": "Eum quasi sapiente",
+        "projectdetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem"
+	},
+    {
+        "id": 6,
+        "projectimage": "'http://placehold.it/700x400'",
+        "projectname": "Nesciunt? Voluptatibus sit",
+        "projectdetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem"
+	},
+    {
+        "id": 7,
+        "projectimage": "'../../src/assets/portfolio2.jpg'",
+        "projectname": "Repellat sequi itaque deserunt",
+        "projectdetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem"
+	},
+    {
+        "id": 8,
+        "projectimage": "'http://placehold.it/700x400'",
+        "projectname": "Dolores in, nesciunt",
+        "projectdetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem"
+	},
+    {
+        "id": 9,
+        "projectimage": "'../../src/assets/portfolio1.jpg'",
+        "projectname": "Illum tempora ex quae",
+        "projectdetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem"
 	}
 ]

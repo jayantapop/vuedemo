@@ -5,6 +5,7 @@ import About from '@/components/about'
 import Images from '@/components/images'
 import LoginPage from '@/components/login'
 import RegistrationPage from '@/components/registration'
+import ServicesPage from '@/components/services'
 
 
 Vue.use(Router)
@@ -20,6 +21,11 @@ export default new Router({
             path: '/about',
             name: 'About',
             component: About
+        },
+        {
+            path: '/services',
+            name: 'ServicesPage',
+            component: ServicesPage
         },
         {
             path: '/images/:id',
