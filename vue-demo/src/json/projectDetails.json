@@ -1,0 +1,13 @@
+[{
+        "id": 1,
+        "projectimage": "'../../src/assets/portfolio1.jpg'",
+        "projectname": "Lorem ipsum dolor",
+        "projectdetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem"
+	},
+    {
+        "id": 2,
+        "projectimage": "'http://placehold.it/700x400'",
+        "projectname": "Sit amet, consectetur",
+        "projectdetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem"
+	}
+]
