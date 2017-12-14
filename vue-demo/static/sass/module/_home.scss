@@ -22,6 +22,14 @@
     padding-top: 30px;
     width: 100%;
     text-align: center;
+    h6 {
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold !important;
+        display: block;
+        margin-bottom: 10px;
+    }
     h1 {
         color: #fff;
         font-size: 40px;
@@ -296,6 +304,17 @@
 }
 .project-title {
     h4 {
-        height: 50px;
+        height: 34px;
     }
+}
+.no-padding {
+    padding: 0px;
+}
+.sort-heading {
+    line-height: 34px;
+    display: block;
+    font-weight: bold;
+}
+.sort-drop {
+    float: right;
 }

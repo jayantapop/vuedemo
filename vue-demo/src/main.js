@@ -8,6 +8,7 @@ import VuePaginate from 'vue-paginate'
 import VueSession from 'vue-session'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import '../node_modules/slick-carousel/slick/slick.css';
 
 
 Vue.config.productionTip = false

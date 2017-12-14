@@ -23,11 +23,13 @@
 </template>
 
 <script>
+    import servicelist from '../json/serviceList.json';
 export default {
   name: 'servicelist',
   data () {
     return {
-        serviceList:[
+        serviceList:servicelist,
+        /*serviceList:[
             {
                 serviceIcon:'fa fa-handshake-o',
                 serviceTitle:'Sturdy Templates',
@@ -48,7 +50,7 @@ export default {
                 serviceTitle:'Made with Love',
                 serviceDetails:'You have to make your websites with love these days!'
             }
-        ],
+        ]*/
     }
   }
 }

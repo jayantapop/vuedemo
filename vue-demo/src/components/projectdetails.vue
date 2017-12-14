@@ -2,9 +2,18 @@
     <section>
         <div class="container">
           <!-- Page Heading -->
-          <h1 class="my-4">Page Heading
-            <small>Secondary Text</small>
-          </h1>
+          <div class="col-lg-12 no-padding">
+              <h1 class="my-3 sort-heading">Project Details
+              <span class="sort-drop">
+               <small>Sort by: </small>
+                    <select v-model="sortingoption" v-on:change="sortTrigger">
+                     <option value="">select</option>
+                      <option value="ascending">ascending</option>
+                      <option value="descending">descending</option>
+                    </select>
+                </span>
+              </h1>
+          </div>
           <div class="row">
               <paginate
                   name="languages"
@@ -43,6 +52,7 @@ export default {
   data () {
     return {
         paginate: ['languages'],
+        sortingoption:'',
         projectDetails: [
             {
                 id: 1,
@@ -101,7 +111,28 @@ export default {
             
         ]
     }
-  }
+  },
+    methods:{
+        sortTrigger(){
+            //console.log(this.sortingoption);
+            switch(this.sortingoption){
+                case 'ascending':
+                    // Sort json in Ascending order on project name field
+                    this.projectDetails.sort(function (a, b) {
+                        // Assuming you want case-insensitive comparison
+                        return (a.projectname.toLowerCase() < b.projectname.toLowerCase()) ? -1 : (a.projectname.toLowerCase() > b.projectname.toLowerCase()) ? 1 : 0;
+                    });
+                    break;
+                case 'descending':
+                    // Sort json in Ascending order on project name field
+                    this.projectDetails.sort(function (a, b) {
+                        // Assuming you want case-insensitive comparison
+                        return (a.projectname.toLowerCase() > b.projectname.toLowerCase()) ? -1 : (a.projectname.toLowerCase() < b.projectname.toLowerCase()) ? 1 : 0;
+                    });
+                    break;
+            }
+        }
+    }
 }
 </script>
 
